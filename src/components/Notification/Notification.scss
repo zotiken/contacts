@@ -1,0 +1,16 @@
+.notify {
+    position: absolute;
+    top:-999px;
+    overflow: hidden;
+    transition: all 1s;
+    padding:5px 20px;
+    border-radius: 10px;
+    background-color:blueviolet;
+    position: absolute;
+    box-shadow: 0 5px 10px rgb(39, 7, 68);
+    // top: 30px;
+    &.show{
+        transition: all 1s;
+        top:10px;
+    }
+}

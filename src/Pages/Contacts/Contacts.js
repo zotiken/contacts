@@ -2,6 +2,8 @@ import React, {useState,useEffect} from 'react';
 import './Contacts.scss';
 
 import axios from 'axios'
+import ItemList from "../../components/ItemList/ItemList"
+import Header from "../../components/Header/Header"
 
 export default function Contacts() {
   const [state, setstate] = useState([])
@@ -22,12 +24,13 @@ export default function Contacts() {
   },[])
   console.log(state);
   return (
-    <div>
-      <h1>Contacts</h1>
-      <ul>
-       {state.map(item => <li>{item.name}</li>)}
+    <>
+<Header/>
+<h1>Contacts</h1>
+      <ul className='contacts__list'>
+       {state.map(item => <ItemList item={item} key={item.id}/>)}
       </ul>
-    </div>
+    </>
   )
 }
 

@@ -1,6 +1,75 @@
-.logIn_form{
+.logIn {
+  padding-top: 70px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+
+  &__form {
+    padding: 40px 20px ;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px #000;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
 }
+
+.form {
+  min-width: 250px;
+  width: 30%;
+  &__label {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    p {
+      top:auto;
+      transition: all 1s;
+      padding-left: 10px;
+      color: rgba(92, 91, 91, 0.933);
+      margin: 0;
+      position: absolute;
+    }
+    & .fixed{
+      transition: all 1s;
+      top: -10px;
+      color: #FFF;
+    }
+  }
+
+  &__email {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    &:focus ~ p{
+      transition: all 1s;
+      top: -10px;
+      color: #FFF;
+    }
+  }
+
+  &__password {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    &:focus ~ p{
+      transition: all 1s;
+      top: -10px;
+      color: #FFF;
+    }
+
+  }
+}
+
