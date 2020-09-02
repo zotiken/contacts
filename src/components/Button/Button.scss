@@ -1,20 +1,39 @@
 .button {
     border:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all linear 1s;
     margin: 0 10px;
     background-color: rgb(137, 243, 169);
     padding:5px 20px ;
     border-radius: 5px;
+    img{
+        padding-right: 5px;
+    }
+    &:hover{
+        transition: all linear .3s;
+        transform: scale(1.2);
+        background-color:  lighten(rgb(137, 243, 169), 10%); 
+        box-shadow: 0 5px 10px rgb(0, 0, 0);
+    }
+
     &.add{
         padding: 5px;
         border-radius: 10px;
         background-color: rgb(175, 46, 207);
+
+        &:hover{
+            background-color:  lighten( rgb(175, 46, 207), 10%); 
+        }
+    
     }
     &.submit{
-        color: rgb(184, 184, 184);
+        color: rgb(251, 251, 251);
         padding: 10px;
         border-radius: 10px;
-        background-color: rgb(122, 120, 122);
-        border: 1px solid  rgb(155, 154, 154);
+        background:linear-gradient(184deg, rgba(47,31,102,1) 0%, rgba(157,118,184,1) 100%);
+        border: 1px solid linear-gradient(184deg, rgba(47,31,102,1) 0%, rgba(157,118,184,1) 100%);
     }
 
 }

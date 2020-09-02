@@ -9,6 +9,6 @@ export default function Button(props) {
     className.push('submit');
   }
   return (
-  <button className={className.join(' ')}>{props.icon ? <img src={props.icon}></img>  : ''}{props.children}</button>
+  <button className={className.join(' ')} onClick={props.onClick}>{props.icon ? <img src={props.icon}></img>  : ''}{props.children}</button>
   );
 }
