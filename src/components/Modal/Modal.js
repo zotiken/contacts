@@ -28,7 +28,6 @@ export default function Modal(props) {
 
 
     useEffect(() => {
-        console.log(props.modal.id)
         if (props.modal.id) {
             settitle('Редактировать')
             setname(props.state.filter(item => item.id === props.modal.id)[0].name)
@@ -50,7 +49,6 @@ export default function Modal(props) {
           setshow(false)
           setinfo('')
         }, 2000);
-        // console.log('dsfvsafv')
       }  else if (name && !email && tel) {
         setinfo('введите почту!')
         setshow(true)
@@ -58,7 +56,6 @@ export default function Modal(props) {
           setshow(false)
           setinfo('')
         }, 2000);
-        // console.log('dsfvsafv')
       }
       else {
         setinfo('Ошибка!')
@@ -66,7 +63,6 @@ export default function Modal(props) {
   
           setinfo('')
         }, 1000);
-        // console.log('dsfvsafv')
       }
       !props.modal.id ? props.addContanct(userInfo) : props.editContanct(userInfo, props.modal.id )
 

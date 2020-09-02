@@ -24,7 +24,6 @@ export default function SignIn(props) {
     e.preventDefault();
     if (user.email === email && user.password === password) {
       props.onLogIn()
-      console.log(props.isAuth);
       router.push('/contacts')
     } else if (user.email !== email) {
       setinfo('Такой адрес EMAIL не существует!')
@@ -33,7 +32,6 @@ export default function SignIn(props) {
         setshow(false)
         setinfo('')
       }, 2000);
-      // console.log('dsfvsafv')
     }  else if (user.password !== password) {
       setinfo('Введен неверный пароль!')
       setshow(true)
@@ -41,7 +39,6 @@ export default function SignIn(props) {
         setshow(false)
         setinfo('')
       }, 2000);
-      // console.log('dsfvsafv')
     }
     else {
       setinfo('Ошибка!')
@@ -49,7 +46,6 @@ export default function SignIn(props) {
 
         setinfo('')
       }, 1000);
-      // console.log('dsfvsafv')
     }
   }
   

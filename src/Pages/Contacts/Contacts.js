@@ -16,10 +16,8 @@ export default function Contacts() {
     try {
       const response = await axios.get('https://jsonplaceholder.typicode.com/users');
       setstate(response.data)
-      console.log(response);
       return response.data
     } catch (error) {
-      console.error(error);
     }
   }
   
@@ -28,16 +26,13 @@ export default function Contacts() {
   },[])
 
   function addContanct(params) { 
-    console.log(params,state)
     setstate([...state,params])
   }
 
   function editContanct(params, id) { 
     const{name,phone, email} = params
-    console.log(params,state)
 
     var edit  = [...state]
-    console.log(edit.filter(item => item.id === id )[0])
     edit.forEach(item =>{ if(item.id === id) {item.name = name; item.email = email;item.phone = phone}})
     setstate([...edit])
   }

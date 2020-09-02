@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d131f970.chunk.css",
+    "main.js": "/static/js/main.5f1aee82.chunk.js",
+    "main.js.map": "/static/js/main.5f1aee82.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.21475b38.js",
+    "runtime-main.js.map": "/static/js/runtime-main.21475b38.js.map",
+    "static/js/2.31e31e75.chunk.js": "/static/js/2.31e31e75.chunk.js",
+    "static/js/2.31e31e75.chunk.js.map": "/static/js/2.31e31e75.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.3f480d00ab5735e1ef2e026b5b86acde.js": "/precache-manifest.3f480d00ab5735e1ef2e026b5b86acde.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.d131f970.chunk.css.map": "/static/css/main.d131f970.chunk.css.map",
+    "static/js/2.31e31e75.chunk.js.LICENSE.txt": "/static/js/2.31e31e75.chunk.js.LICENSE.txt",
+    "static/media/edit-24px.svg": "/static/media/edit-24px.539b3c38.svg",
+    "static/media/App.scss": "/static/media/loading.9c2b2c64.gif",
+    "static/media/person_add-24px.svg": "/static/media/person_add-24px.8935f555.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.21475b38.js",
+    "static/js/2.31e31e75.chunk.js",
+    "static/css/main.d131f970.chunk.css",
+    "static/js/main.5f1aee82.chunk.js"
+  ]
+}
